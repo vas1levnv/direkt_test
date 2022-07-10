@@ -1,7 +1,7 @@
 <template>
-  <div class="black-background-content">
+  <div class="main-content">
+    <HomePage/>
     <div class="container">
-      <HomePage/>
       <AboutUs/>
       <CaseProjects :posts="posts"/>
     </div>
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <style scoped>
-.black-background-content {
+.main-content {
   background: #0E0E0E;
   color: #ffffff;
   padding-top: 120px;

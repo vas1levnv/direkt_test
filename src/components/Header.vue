@@ -1,21 +1,23 @@
 <template>
-  <div class="navbar">
-    <div class="container">
-      <div class="navbar-logo">
-        <div class="logo">Cent</div>
-      </div>
-      <ul class="navbar-item">
-        <li><a href="#">кейсы</a></li>
-        <li><a href="#">о нас</a></li>
-        <li><a href="#">контакты</a></li>
-        <li><a href="#">новости</a></li>
-        <li><a href="#">клиенты</a></li>
-      </ul>
-      <div class="navbar-icon">
-        <span></span>
+  <heaeder>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-logo">
+          Cent
+        </div>
+        <ul class="navbar-item">
+          <li><a href="#">кейсы</a></li>
+          <li><a href="#">о нас</a></li>
+          <li><a href="#">контакты</a></li>
+          <li><a href="#">новости</a></li>
+          <li><a href="#">клиенты</a></li>
+        </ul>
+        <div class="navbar-icon">
+          <span></span>
+        </div>
       </div>
     </div>
-  </div>
+  </heaeder>
 </template>
 
 <script>
@@ -67,15 +69,15 @@ li:after {
 }
 
 
-li:hover:after{
+li:hover:after {
   transform: translateX(0);
 }
 
-a{
+a {
   font-size: 16px;
 }
 
-.logo{
+.navbar-logo {
   font-size: 40px;
 }
 
@@ -87,9 +89,11 @@ a{
   .navbar-item {
     display: none;
   }
-  .logo{
+
+  .navbar-logo {
     font-size: 20px;
   }
+
   .navbar-icon {
     display: block;
     position: relative;
@@ -97,7 +101,7 @@ a{
     height: 12px;
   }
 
-  .navbar-icon span{
+  .navbar-icon span {
     background-color: #fff;
     position: absolute;
     width: 100%;
@@ -114,10 +118,12 @@ a{
     height: 2px;
     left: 0;
   }
-  .navbar-icon:before{
+
+  .navbar-icon:before {
     top: 0;
   }
-  .navbar-icon::after{
+
+  .navbar-icon::after {
     bottom: 0;
   }
 }

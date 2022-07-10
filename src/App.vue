@@ -4,7 +4,7 @@
   <OurAssets :ourAssets="ourAssets"/>
   <OurClients/>
   <Footer/>
-
+<TextComponent/>
 
 
 </template>
@@ -16,6 +16,7 @@ import MainContent from "@/components/MainContent/MainContent";
 import OurAssets from "@/components/OurAssets";
 import OurClients from "@/components/OurClients/OurClients";
 import Footer from "@/components/Footer";
+import TextComponent from "@/components/TextComponent";
 
 export default {
   components: {
@@ -23,7 +24,8 @@ export default {
     MainContent,
     OurAssets,
     OurClients,
-    Footer
+    Footer,
+    TextComponent
   },
   data() {
     return {
@@ -81,7 +83,7 @@ export default {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }

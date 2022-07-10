@@ -12,7 +12,17 @@
 </template>
 
 <script>
+import postImg from '../../img/Rectangle 149.png'
+import PostsContent from "@/components/MainContent/PostsContent";
+
 export default {
+  components: PostsContent,
+
+  data: function () {
+    return {
+      postImg: postImg
+    }
+  },
   name: "CaseProjects",
   props: {
     posts: {
@@ -27,61 +37,64 @@ export default {
 
 <style scoped>
 
-.caseProjects{
+.caseProjects {
   max-height: 1300px;
   z-index: 3;
   overflow-y: auto;
 }
 
-h2{
+h2 {
   margin-bottom: 60px;
 }
 
 .posts {
   display: grid;
-  grid-template-columns: repeat(2,minmax(200px, 600px));
+  grid-template-columns: repeat(2, minmax(200px, 600px));
   row-gap: 40px;
   column-gap: 50px;
 }
 
-.post img{
+.post img {
   width: 100%;
   object-fit: none;
 }
 
-h3{
+h3 {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 700;
 }
 
-p{
+p {
   margin-top: 15px;
   font-size: 12px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-  .caseProjects{
+  .caseProjects {
     max-height: 700px;
   }
 
-  h2{
+  h2 {
     margin-bottom: 25px;
   }
+
   .posts {
     display: grid;
-    grid-template-columns: repeat(1,minmax(200px, 600px));
+    grid-template-columns: repeat(1, minmax(200px, 600px));
     row-gap: 30px;
   }
-  h3{
+
+  h3 {
     margin-top: 0;
   }
 
-  p{
+  p {
     margin-top: 0;
   }
-  .post img{
+
+  .post img {
     width: 100%;
     object-fit: contain;
   }
